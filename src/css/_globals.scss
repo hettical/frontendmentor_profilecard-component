@@ -1,0 +1,31 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+// Typgoraphy
+p {
+    font-family: $customFont;
+    font-weight: $normalFontWeight;
+    font-size: 16px;
+    margin: 5px 10px;
+    color: $darkGrayishBlue;
+}
+
+.bold {
+    font-weight: $heavyFontWeight;
+    color: $veryDarkBlue;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,202 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 10px;
+  color: #6a6f81;
+}
+
+.bold {
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.wrap .bg-pattern {
+  position: absolute;
+  width: 200%;
+  opacity: .5;
+}
+
+@media (min-width: 40em) {
+  .wrap .bg-pattern {
+    opacity: 1;
+    width: 80%;
+  }
+}
+
+.wrap .bg-pattern-top {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-70%, -50%);
+          transform: translate(-70%, -50%);
+}
+
+@media (min-width: 40em) {
+  .wrap .bg-pattern-top {
+    -webkit-transform: translate(-35%, -55%);
+            transform: translate(-35%, -55%);
+  }
+}
+
+.wrap .bg-pattern-bottom {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(70%, 50%);
+          transform: translate(70%, 50%);
+}
+
+@media (min-width: 40em) {
+  .wrap .bg-pattern-bottom {
+    -webkit-transform: translate(30%, 65%);
+            transform: translate(30%, 65%);
+  }
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+  width: 320px;
+}
+
+@media (min-width: 40em) {
+  .card {
+    width: 350px;
+  }
+}
+
+.card__background {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: url("/images/bg-pattern-card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+}
+
+.card .profile {
+  position: relative;
+}
+
+.card .profile-image {
+  background-image: url("/images/image-victor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 50px);
+}
+
+.card .profile-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  padding: 20px 0 20px;
+}
+
+.card .profile-bio .profile-name {
+  margin-right: 0px;
+}
+
+.card .profile-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #19a2ae;
+}
+
+.card .profile-stats-heading {
+  font-size: 10px;
+}
+
+.card .profile-location {
+  font-size: 12px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.attribution p {
+  font-size: 12px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

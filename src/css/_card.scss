@@ -1,0 +1,70 @@
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    width: 320px;
+
+    @include breakpoints-up(tablet) {
+        width: 350px;
+    }
+
+    &__background {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: url('/images/bg-pattern-card.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    .profile {
+        position: relative;
+
+        &-image {
+            background-image: url('/images/image-victor.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            border: 5px solid #fff;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 50px);
+        }
+
+        &-bio {
+            // height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            padding: 20px 0 20px;
+
+            .profile-name {
+                margin-right: 0px;
+            }
+        }
+
+        &-stats {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px 10px;
+            border-top: 1px solid $darkCyan;
+
+            &-heading {
+                font-size: 10px;
+            }
+        }
+
+        &-location {
+            font-size: 12px;
+        }
+
+    }
+}

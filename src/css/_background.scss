@@ -1,0 +1,46 @@
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $darkCyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .bg-pattern {
+        position: absolute;
+        width: 200%;
+        opacity: .5;
+
+        @include breakpoints-up(tablet) {
+            opacity: 1;
+            width: 80%;
+        }
+
+        &-top {
+            top: 0;
+            left: 0;
+            
+            transform: translate(-70%, -50%);
+
+            @include breakpoints-up(tablet) {
+                transform: translate(-35%, -55%);
+            }
+        }
+
+        &-bottom {
+            bottom: 0;
+            right: 0;
+
+            transform: translate(70%, 50%);
+
+            @include breakpoints-up(tablet) {
+                transform: translate(30%, 65%);
+            }
+        }
+    }
+
+
+}
